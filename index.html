@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Embed Sender</title>
+    <style>
+body {
+  left: 0px;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+}
+#textdiv {
+  left: 50vw;
+  top: 50vh;
+  position: fixed;
+  transform: translate(-50%, -50%);
+}
+#debug {
+  left: 50vw;
+  bottom: 5vh;
+  position: fixed;
+  width: 10vmin;
+  height: 5vmin;
+  transform: translateX(-50%);
+}
+    </style>
+  </head>
+  <body>
+    <div id="textdiv">
+      <p id="text">Please enter the webhook url.</p>
+      <input type="text" id="url"/>
+    </div>
+    <input type="button" id="debug" value="debug"/>
+  </body>
+</html>
