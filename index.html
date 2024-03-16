@@ -32,7 +32,31 @@ body {
     <div id="textdiv">
       <p id="text">Please enter the webhook url.</p>
       <input type="text" id="url"/>
+      <input type="button" id="send" value="Set URL"/>
     </div>
     <input type="button" id="debug" value="debug"/>
   </body>
+  <script>
+(() => {
+  const debug = document.getElementById(`debug`),
+    text = document.getElementById(`text`),
+    send = document.getElementById(`send`),
+    url = document.getElementById(`url`);
+  let dodebug = false;
+  debug.addEventListener(`click`, () => {
+    dodebug = !dodebug;
+    if (dodebug) {
+      text.innerText = `DEBUG NUM: `;
+    } else {
+      text.innerText = `Please enter a webhook url.`;
+    };
+    return;
+  });
+  send.addEventListener(`click`, () => {
+    
+    return;
+  });
+  return;
+})();
+  </script>
 </html>
